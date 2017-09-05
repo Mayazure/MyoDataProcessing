@@ -18,6 +18,7 @@ public class DataExtractor {
 	private DataInfo dataInfo = DataInfo.getDataInfoInstance();
 	private MainWindow mainWindow;
 	private int[] count;
+	private int density = Table.density;
 	
 	public DataExtractor(MainWindow mainWindow){
 		this.mainWindow = mainWindow;
@@ -27,14 +28,14 @@ public class DataExtractor {
 		rangeInfos = rangeList.getRangeList();
 		fileOperator = new FileOperator();
 //		readFileOperator = new FileOperator();
-		count = new int[5];
-		for(int i=0;i<5;i++){
+		count = new int[density];
+		for(int i=0;i<count.length;i++){
 			count[i]=0;
 		}
 	}
 	
 	public void extractData(){
-		for(int i=0;i<5;i++){
+		for(int i=0;i<density;i++){
 			fileOperator.createFileDir(dataInfo.getParsedFilePath()+"\\"+i);
 		}
 		Iterator<RangeInfo> iterator = rangeInfos.iterator();
