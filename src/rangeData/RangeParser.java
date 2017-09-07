@@ -9,12 +9,12 @@ public class RangeParser {
 		String[] datas = line.split("\\$..=");
 		
 //		int len = datas.length;
+//		System.out.println(">>> "+line);
 //		System.out.println(len);
 //		for(int i=0;i<len;i++){
 //			System.out.println(datas[i]);
 //		}
 		
-//		System.out.println(line);
 		return new RangeInfo(datas[1], datas[2], datas[3],datas[4]);
 	}
 }

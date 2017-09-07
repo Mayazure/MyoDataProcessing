@@ -24,7 +24,7 @@ public class RangeList {
 		String line;
 		
 		while((line=fileOperator.nextLine())!=null){
-			if(line.contains("TEST")||line.contains("start")||line.contains("Total")){
+			if(line.equals("")||line.contains("TEST")||line.contains("start")||line.contains("Total")){
 				continue;
 			}
 			else{

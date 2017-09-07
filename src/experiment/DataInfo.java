@@ -1,5 +1,7 @@
 package experiment;
 
+import rangeData.Table;
+
 public class DataInfo {
 
 	private static DataInfo dataInfoInstance = new DataInfo();
@@ -30,7 +32,7 @@ public class DataInfo {
 
 	public void setDataFilePath(String dataFilePath) {
 		this.dataFilePath = dataFilePath;
-		this.parsedFilePath = dataFilePath+"\\ParsedData\\";
+		this.parsedFilePath = dataFilePath+"\\ParsedData_"+Table.density+"\\";
 	}
 
 	public String getEmgFileName() {
