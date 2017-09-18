@@ -3,6 +3,7 @@ package rangeData;
 public class Table {
 
 	public static final int density = 3;
+	public static final int windowLength = 400;
 	
 	public static final int[] level = {
 			0,0,0,0,0,0,0,0,0,0,0,

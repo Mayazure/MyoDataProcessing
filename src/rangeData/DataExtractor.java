@@ -59,11 +59,11 @@ public class DataExtractor {
 			
 			int end = line.getLine();
 			int start = 0;
-			if(end<=1000){
+			if(end<=Table.windowLength){
 				start = 0;
 			}
 			else{
-				start = end - 1000;
+				start = end - Table.windowLength;
 			}
 			for(int i=0;i<=end;i++){
 				if(i<start){
